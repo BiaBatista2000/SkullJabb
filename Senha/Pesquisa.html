@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Skull Jabb</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+    <link rel="shortcut icon" href="img/Logo Roxa.png" type="image/png">
+    <link rel="stylesheet" href="Pesquisa.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="#"><img src="img/Purple.png" alt="Caveira branca sobre um fogo azul" class="no-underline"></a>
+                <a href="#" class="no-underline"><span>SKULL <br> JABB</span></a>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Procurar...">
+                <i class="mdi mdi-magnify search-icon"></i>
+            </div>
+            <nav class="menu">
+                <a href="#">Loja</a>
+                <a href="#">Comunidade</a>
+                <a href="#">Suporte</a>
+            </nav>
+            <div class="icons">
+                <button class="btn" id="language-button">Idioma</button>
+                <button class="btn">Login</button>
+                <i class="mdi mdi-cart-outline icone"></i>
+                <i class="mdi mdi-camera-outline icone"></i> 
+            </div>
+            <div class="dropdown" id="language-options">
+                <div class="language-option" onclick="changeLanguage('pt')">Português</div>
+                <div class="language-option" onclick="changeLanguage('en')">Inglês</div>
+                <div class="language-option" onclick="changeLanguage('es')">Espanhol</div>
+                <div class="language-option" onclick="changeLanguage('fr')">Francês</div>
+                <div class="language-option" onclick="changeLanguage('de')">Alemão</div>
+                <div class="language-option" onclick="changeLanguage('it')">Italiano</div>
+                <div class="language-option" onclick="changeLanguage('ru')">Russo</div>
+                <div class="language-option" onclick="changeLanguage('jp')">Japonês</div>
+                <div class="language-option" onclick="changeLanguage('zh')">Chinês</div>
+                <div class="language-option" onclick="changeLanguage('zh-CN')">Chinês Mandarim</div>
+                <div class="language-option" onclick="changeLanguage('ar')">Árabe</div>
+                <div class="language-option" onclick="changeLanguage('ko')">Coreano</div>
+                <div class="language-option" onclick="changeLanguage('nl')">Holandês</div>
+                <div class="language-option" onclick="changeLanguage('sv')">Sueco</div>
+                <div class="language-option" onclick="changeLanguage('da')">Dinamarquês</div>
+                <div class="language-option" onclick="changeLanguage('fi')">Finlandês</div>
+                <div class="language-option" onclick="changeLanguage('no')">Norueguês</div>
+                <div class="language-option" onclick="changeLanguage('pl')">Polonês</div>
+                <div class="language-option" onclick="changeLanguage('tr')">Turco</div>
+                <div class="language-option" onclick="changeLanguage('hu')">Húngaro</div>
+                <div class="language-option" onclick="changeLanguage('cs')">Tcheco</div>
+            </div>
+        </div>
+    </header>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+        </div>
+    
+    <div class="container">
+        <div class="header">
+            <h2 class="resultado-pesquisa">Resultado da pesquisa "Left 4 Dead"</h2>
+        </div>
+        <div class="main-content">
+            <div class="game-details">
+                <img src="img/Left 4 Dead.png" alt="Left 4 Dead">
+                <div class="details">
+                    <h1>Left 4 Dead</h1> 
+                    <p>R$ 25,60</p>
+                    <br>
+                    <button id="wishlistBtn">Adicionar à lista de desejos</button>
+                    <button id="cartBtn">Adicionar ao carrinho</button>
+                </div>
+            </div>
+          
+            <div class="price-filter">
+                <label for="price">Filtrar por preço</label>
+                <input type="range" id="price" name="price" min="15" max="150" value="150" oninput="updatePriceRange(value)">
+                <div class="price-values">
+                    <span>R$ 15</span>
+                    <span id="price-max">R$ 150</span>
+                </div>
+            </div>
+        </div>
+        <div class="related-games">
+            <h3 class="relacionados">Relacionados</h3>
+            <div class="games">
+                <div class="game">
+                    <img src="img/Resident Evil.png" alt="Resident Evil">
+                    <p>Resident Evil</p>
+                    <div class="phasmophobia"><p class="phasmophobia">Valor: R$ 75,60</p></div>
+                </div>
+                <div class="game">
+                    <img src="img/Phasmophobia.png" alt="Phasmophobia">
+                    <p>Phasmophobia</p>
+                    <div class="phasmophobia"><p class="phasmophobia">Valor: R$ 43,25</p></div>
+                </div>
+                <div class="game">
+                    <img src="img/Project Zomboid.png" alt="Project Zomboid">
+                    <p>Project Zomboid</p>
+                    <div class="phasmophobia"><p class="phasmophobia">Valor: R$ 49,99</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Pesquisa.js"></script>
+
+   <br>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/skulljabb/" target="_blank"><i class="mdi mdi-instagram"></i></a>
+            <a href="#" target="_blank"><i class="mdi mdi-whatsapp"></i></a>
+            <a href="mailto:SkullJabb@gmail.com" target="_blank"><i class="mdi mdi-email-outline"></i></a>
+        </div>
+        <p>&copy; 2024 Skull Jabb - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
